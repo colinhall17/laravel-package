@@ -1,0 +1,52 @@
+{
+    "name": "colinhall17/laravel-pacakage",
+    "description": ":package_description",
+    "keywords": [
+        "colinhall17",
+        ":package_name"
+    ],
+    "homepage": "https://github.com/colinhall17/laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Colin Hall",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MacsiDigital\\Skeleton\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MacsiDigital\\Skeleton\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MacsiDigital\\Skeleton\\Providers\\SkeletonServiceProvider"
+            ],
+            "aliases": {
+                "Skeleton": "MacsiDigital\\Skeleton\\Facades\\Package"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
